@@ -1,0 +1,146 @@
+<!--
+# @author       : Muhammad Hanif
+# @email        : moehammadhanif@gmail.com
+# @telegram     : https://t.me/hanifmu
+# @home page    : https://hanifmu.com
+# @create date  : 2020-12-12 06:15:01
+# @modify date  : 2020-12-12 06:15:01
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#343a40" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Namira" />
+    <meta name="description" content="Jadwal kajian Islam di Masjid Namira Lamongan." />
+    <meta name="author" content="hanifmu.com" />
+
+    <link rel="preconnect" href="https://hanifmu.com.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://www.instagram.com" />
+
+    <link rel="dns-prefetch" href="https://hanifmu.com.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+
+    <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="demo.hanifmu.com" />
+    <meta property="og:url" content="https://demo.hanifmu.com/namira/">
+    <meta property="og:title" content="Namira">
+    <meta property="og:description" content="Jadwal kajian Islam Masjid Namira Lamongan.">
+    <meta property="og:image" content="https://demo.hanifmu.com/namira/ayo-ke-masjid-namira.jpg">
+    <meta property="og:image:secure_url" content="https://demo.hanifmu.com/namira/ayo-ke-masjid-namira.jpg">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://demo.hanifmu.com/namira/">
+    <meta name="twitter:title" content="Namira" />
+    <meta name="twitter:description" content="Jadwal kajian Islam Masjid Namira Lamongan." />
+    <meta name="twitter:image" content="https://demo.hanifmu.com/namira/ayo-ke-masjid-namira.jpg" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+    <link href="./this.css" rel="stylesheet">
+
+    <link rel="canonical" href="https://demo.hanifmu.com/namira/" />
+    <link rel='shortcut icon' type='image/x-icon' href='https://hanifmu.com/hanifmu-ico.png' />
+
+    <title>Namira</title>
+</head>
+
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">NAMIRA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="https://iqra.hanifmu.com/tags/masjid-namira">Rekaman Kajian</a>
+                    <a class="nav-item nav-link" href="https://hanifmu.com/posts/">hanifmu.com</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main role="main" class="container">
+        <div class="album py-5">
+            <div class="row">
+                <div class="col-12 col-md-12 col-sm-12">
+                    <div class="alert alert-warning" role="alert">
+                        <b>Informasi:</b>
+                        <ul>
+                            <li>
+                                Gambar jadwal kajian yang tampil di halaman ini diambil dari akun Instagram
+                                <a href="https://www.instagram.com/masjidnamira/" target="_blank">
+                                    Masjid Namira
+                                </a>.
+                            </li>
+                            <li>
+                                Jadwal kajian juga bisa dilihat di kanal Telegram
+                                <a href="https://t.me/masjidnamira/" target="_blank">
+                                    Masjid Namira
+                                </a>.
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="post">
+                <!--<template v-for="x in post">-->
+                <template v-for="(x, index) in post" v-if="index <= 5">
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <a target="_blank" :href="x.node.display_url">
+                            <figure class="figure">
+                                <img :src="x.node.display_url" class="figure-img img-fluid rounded"
+                                    alt="Jadwal kajian islam di Masjid Namira Lamongan"
+                                    title="Jadwal kajian islam di Masjid Namira Lamongan">
+                            </figure>
+                        </a>
+                    </div>
+                </template>
+            </div>
+
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-sm-12">
+                        <div class="alert alert-info text-center" role="alert">
+                            Developed by <a href="https://hanifmu.com/posts/"><strong>hanifmu.com</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script crossorigin="anonymous" integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"
+        integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+        crossorigin="anonymous"></script>
+    <script src="./this.js"></script>
+</body>
+
+</html>
